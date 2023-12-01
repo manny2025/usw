@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>USW DS BACKEND MEMBERS</title>
+  </head>
+  <body>
+    <% if (members.length > 0){ %>
+    <ul>
+      <% for (let member of members){ %>
+      <li>
+        <p>
+          <span><b> <%=member.title %> </b></span>
+          <span> <%= member.name %> </span>
+          <span> | <%= member.description %> </span>
+        </p>
+      </li>
+      <% } %>
+    </ul>
+    <%}%>
+  </body>
+</html>
